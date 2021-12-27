@@ -1,0 +1,49 @@
+=================
+Simple Ingredient
+=================
+
+I need @potato{1%gram}.
+
+---
+
+(recipe (step (ingredient (amount (quantity) (units)))))
+
+====================
+Multiword Ingredient
+====================
+
+I need @sweet potato{}.
+
+---
+
+(recipe (step (ingredient)))
+
+==============
+Big Ingredient
+==============
+
+@extra-virgin olive oil{4%tablespoons}
+
+---
+
+(recipe (step (ingredient (amount (quantity) (units)))))
+
+===============
+Simple Cookware
+===============
+
+I need #pot{1%lb}.
+
+---
+
+(recipe (step (cookware (amount (quantity) (units)))))
+
+============
+Simple Timer
+============
+
+Simple timer for ~{1.5%hours}.
+
+---
+
+(recipe (step (timer (amount (quantity) (units)))))

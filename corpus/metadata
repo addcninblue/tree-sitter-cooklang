@@ -1,0 +1,45 @@
+====================
+Single line Metadata
+====================
+>>> hello: test
+
+---
+
+(recipe (metadata))
+
+==================
+Multiline Metadata
+==================
+>>> hello: test
+>>> test: hi
+
+---
+
+(recipe (metadata) (metadata))
+
+=================
+Skipline Metadata
+=================
+>>> hello: test
+
+recipe line
+
+>>> test: hi
+
+---
+
+(recipe (metadata) (step) (metadata))
+
+==================
+Skipline2 Metadata
+==================
+>>> hello: test
+
+recipe line
+recipe line
+
+>>> test: hi
+
+---
+
+(recipe (metadata) (step) (step) (metadata))

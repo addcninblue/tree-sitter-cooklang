@@ -1,0 +1,50 @@
+===
+Foccacia
+===
+>>> recipe: https://www.bonappetit.com/recipe/easy-no-knead-focaccia
+>>> time required: 18 hours
+>>> time spent: 1 hour
+
+In a #mixing bowl{}, whisk @active dry yeast{1/4%ounces}, @honey{2%tsp} and @lukewarm water{2.5%cups} in a medium bowl. Let sit for 5 minutes.
+
+Add @flour{600%grams} and @salt{1%tablespoons}. Mix until a shaggy dough forms and no dry streaks remain.
+
+In a separate #big bowl{}, add @extra-virgin olive oil{4%tablespoons}. Then, transfer dough to bowl and coat in oil. Wrap bowl with @plastic wrap{} and chill until dough is doubled in size. Allow for ~{8%hours} until doubled in size.
+
+Knead bread by shaping it using a pair of forks until it deflates a bit.
+
+Generously butter a #baking pan{}. Pour @extra-virgin olive oil{1%tablespoons} into the center. Transfer dough over and pour remaining oil in. Let rise in a warm, dry spot until doubled in size; roughly ~{1.5%hours}.
+
+At this point, bread should be ready. To test, if you poke the bread, it should come back very slowly. At this point, dimple the focaccia alll over. Drizzle with @extra-virgin olive oil{1%tablespoons} and sprinkle with @flaky sea salt{}.
+
+Bake for ~{20%minutes} until puffed and golden brown all over.
+
+---
+
+(recipe
+  (metadata)
+	(metadata)
+	(metadata)
+	(step
+	  (cookware)
+		(ingredient (amount (quantity) (units)))
+		(ingredient (amount (quantity) (units)))
+		(ingredient (amount (quantity) (units))))
+	(step
+	  (ingredient (amount (quantity) (units)))
+		(ingredient (amount (quantity) (units))))
+	(step
+    (cookware)
+		(ingredient (amount (quantity) (units)))
+		(ingredient)
+		(timer (amount (quantity) (units))))
+	(step)
+	(step
+	  (cookware)
+		(ingredient (amount (quantity) (units)))
+		(timer (amount (quantity) (units))))
+	(step
+	  (ingredient (amount (quantity) (units)))
+		(ingredient))
+	(step
+	  (timer (amount (quantity) (units)))))
