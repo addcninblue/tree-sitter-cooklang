@@ -33,11 +33,15 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "amount",
+          "named": true
+        },
+        {
+          "type": "name",
           "named": true
         }
       ]
@@ -48,11 +52,15 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "amount",
+          "named": true
+        },
+        {
+          "type": "name",
           "named": true
         }
       ]
@@ -72,6 +80,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "name",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "quantity",
@@ -133,11 +146,15 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "amount",
+          "named": true
+        },
+        {
+          "type": "name",
           "named": true
         }
       ]

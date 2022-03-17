@@ -41,12 +41,13 @@ module.exports = grammar({
     comment:            $ => seq("-", "-", /.*/),
     block_comment:      $ => seq("[-", /[^-]*-+(?:[^]-][^-]*-+)*/, "]"),
 
-    ingredient:         $ => prec.left(PREC.modifier, seq("@", optional(choice($._word, $._multiword)), "{", repeat($._whitespace), optional($.amount), repeat($._whitespace), "}")),
-    cookware:           $ => prec.left(PREC.modifier, seq("#", optional(choice($._word, $._multiword)), "{", repeat($._whitespace), optional($.amount), repeat($._whitespace), "}")),
-    timer:              $ => prec.left(PREC.modifier, seq("~", optional(choice($._word, $._multiword)), "{", repeat($._whitespace), optional($.amount), repeat($._whitespace), "}")),
+    ingredient:         $ => prec.left(PREC.modifier, seq("@", optional($.name), "{", repeat($._whitespace), optional($.amount), repeat($._whitespace), "}")),
+    cookware:           $ => prec.left(PREC.modifier, seq("#", optional($.name), "{", repeat($._whitespace), optional($.amount), repeat($._whitespace), "}")),
+    timer:              $ => prec.left(PREC.modifier, seq("~", optional($.name), "{", repeat($._whitespace), optional($.amount), repeat($._whitespace), "}")),
 
     // "%" will soon be changed to "*".
     // Ref: https://github.com/cooklang/spec/blob/main/EBNF.md
+    name:               $ => choice($._word, $._multiword),
     amount:             $ => prec.left(PREC.amount, choice($.quantity, seq($.quantity, repeat($._whitespace), "%", repeat($._whitespace), $.units))),
     quantity:           $ => prec(PREC.quantity, choice($._number, $._multiword)),
     units:              $ => choice($._word, $._multiword, $._punctuation),
