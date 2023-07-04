@@ -6,7 +6,7 @@ I need @potato{1%gram}.
 
 ---
 
-(recipe (step (ingredient (amount (quantity) (units)))))
+(recipe (step (ingredient (name) (amount (quantity) (units)))))
 
 ====================
 Multiword Ingredient
@@ -16,7 +16,7 @@ I need @sweet potato{}.
 
 ---
 
-(recipe (step (ingredient)))
+(recipe (step (ingredient (name))))
 
 ==============
 Big Ingredient
@@ -26,7 +26,7 @@ Big Ingredient
 
 ---
 
-(recipe (step (ingredient (amount (quantity) (units)))))
+(recipe (step (ingredient (name) (amount (quantity) (units)))))
 
 ===============
 Simple Cookware
@@ -36,7 +36,7 @@ I need #pot{1%lb}.
 
 ---
 
-(recipe (step (cookware (amount (quantity) (units)))))
+(recipe (step (cookware (name) (amount (quantity) (units)))))
 
 ============
 Simple Timer
