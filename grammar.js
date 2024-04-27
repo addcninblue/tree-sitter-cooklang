@@ -17,7 +17,6 @@ module.exports = grammar({
     [$._integer, $._digit],
     [$._fractional, $._number],
     [$._unreserved_symbol, $._symbol],
-    [$.metadata, $._multiword],
     [$.comment, $._alphabetic],
     [$.metadata, $.metadata], // TODO: is this really necessary?
   ],
